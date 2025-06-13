@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: stremio-addon
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: oregon
+    buildCommand: ""
+    startCommand: ""
+    healthCheckPath: /manifest.json
+    envVars:
+      - key: PORT
+        value: 10000
+    autoDeploy: false
+
