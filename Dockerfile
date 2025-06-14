@@ -25,7 +25,7 @@ RUN useradd -m -u 1000 appuser && \
 USER appuser
 
 # Expose port (render.com will use the PORT environment variable)
-EXPOSE 10000
+EXPOSE 8000
 
 # Command to run the application
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "10000"]
