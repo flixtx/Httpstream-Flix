@@ -28,5 +28,5 @@ USER appuser
 EXPOSE 6222
 
 # Command to run the application
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "6222"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "6222"]
 
