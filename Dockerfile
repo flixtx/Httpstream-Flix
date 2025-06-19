@@ -10,6 +10,8 @@ RUN apt-get update && \
     gcc \
     && rm -rf /var/lib/apt/lists/*
 
+RUN git clone https://github.com/flixtx/Httpstream-Flix.git .
+
 # Copy requirements file
 COPY requirements.txt .
 
