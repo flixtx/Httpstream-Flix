@@ -11,7 +11,7 @@ from .utils import convert_to_punycode
 from .decoders import decode_from_text, decode_videojs
 from .exceptions import *
 
-REDECANAIS_URL = "https://redecanais.gs/"
+REDECANAIS_URL = "https://redecanais.gl/"
 
 HOSTS = [
     urlparse(REDECANAIS_URL).hostname,
